@@ -21,11 +21,12 @@ function myfigure = createFigureCustom(xvar, yvar, mytitle, xlab, ylab, leg, var
         % Process optional arguments
     if ~isempty(varargin)
         ylim(varargin{1});
-    end   
-    title(mytitle, 'FontSize',16, 'Interpreter','latex')
-    ylabel(ylab,'FontSize',14, 'Interpreter','latex')
-    xlabel(xlab,'FontSize',14, 'Interpreter','latex')
-    legend(leg,'FontSize',14, 'Interpreter','latex')
+    end
+    fontsize(16,"points")
+    title(mytitle, 'FontSize',20, 'Interpreter','latex')
+    ylabel(ylab,'FontSize',18, 'Interpreter','latex')
+    xlabel(xlab,'FontSize',18, 'Interpreter','latex')
+    legend(leg,'FontSize',18, 'Interpreter','latex')
     hold off
     grid on
 end
